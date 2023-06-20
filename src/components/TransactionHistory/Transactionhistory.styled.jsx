@@ -10,8 +10,7 @@ export const TransactionHistoryTable = styled.table`
   & td {
     padding: 10px;
     text-align: center;
-    border: 1px solid white;
-    
+    border: 1px solid white;    
   }
 
   & th {
@@ -21,9 +20,10 @@ export const TransactionHistoryTable = styled.table`
   }
 
   & td {
-    background-color: white;
+   
     outline: 1px solid #EEEEEE;
   }
+  
   & td::first-letter {
     text-transform: uppercase;
   }
@@ -32,6 +32,14 @@ export const TransactionHistoryTable = styled.table`
     background-color: #00BCD5;
   }
 
+  & tr:nth-of-type(2n) {
+    background-color: #ECF1F4;
+  }
+
+  & tr {
+    background-color: white;
+  }
+  
   & tr:last-of-type td {
     border-bottom: none;
   }
